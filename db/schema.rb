@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_09_151106) do
+ActiveRecord::Schema.define(version: 2021_05_09_152230) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2021_05_09_151106) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["title"], name: "index_products_on_title", unique: true
