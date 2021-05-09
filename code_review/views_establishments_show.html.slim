@@ -1,0 +1,7 @@
+h5 Teachers
+ul
+- @establishment.teachers.each do |teacher|
+li = teacher.first_name + " " + teacher.last_name
+
+# l.3 See Controller comment --> N+1 query spotted.
+# l.4 a view helper / presenter pattern with a decorator to DRY an encapsulate #full_name logic
