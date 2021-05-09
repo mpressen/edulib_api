@@ -1,9 +1,8 @@
 class ArticleSerializer < ActiveModel::Serializer
+  attribute :id
+
   belongs_to :product
+  # has_many :licenses
 
-  has_many :licenses
-
-  attributes :id
-  attributes :title
-
+  attribute :title
 end

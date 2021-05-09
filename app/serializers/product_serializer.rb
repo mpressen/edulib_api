@@ -1,6 +1,6 @@
 class ProductSerializer < ActiveModel::Serializer
   attributes :id
-  attributes :title
+  # has_many :articles
 
-  has_many :articles
+  attributes :title
 end

@@ -61,4 +61,9 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  # TODO: implement proper db test initializing
+  # config.before(:suite) do
+  #   Rails.application.load_seed # loading seeds
+  # end
 end

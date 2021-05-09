@@ -1,7 +1,5 @@
 class Ent1Controller < ApplicationController
   def show_licenses
-    hash = {}
-
-    render json: hash
+    render json: Establishment.find(params[:id])
   end
 end

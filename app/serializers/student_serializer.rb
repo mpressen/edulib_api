@@ -1,8 +1,10 @@
 class StudentSerializer < ActiveModel::Serializer
-  belongs_to :establishment
-  has_many :licenses
+  # attribute :id
 
-  attributes :firstname
-  attributes :lastname
-  attributes :email
+  # belongs_to :establishment
+  # has_many :licenses
+
+  attribute :firstname
+  attribute :lastname
+  attribute :email
 end
