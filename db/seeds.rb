@@ -18,6 +18,7 @@ article = Article.create!(
 establishment = Establishment.create!
 
 student = Student.create!(
+  establishment: establishment,
   firstname: "Jean",
   lastname: "Dupont",
   email: "jean.dupont@etudiant.fr"
@@ -25,7 +26,6 @@ student = Student.create!(
 
 license = License.create!(
   article: article,
-  establishment: establishment,
   student: student,
   start_date: Date.parse("2021-01-01"),
   end_date: Date.parse("2021-12-31")
