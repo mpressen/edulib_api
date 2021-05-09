@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "articles": [
+        {
+          "licenses": [
+            {
+              "end_date": "2021-12-31",
+              "start_date": "2021-01-01",
+              "student": {
+                "name": "Jean Dupont",
+                "email": "jean.dupont@etudiant.fr"
+              }
+            }
+          ],
+          "id": 1,
+          "title": "Histoire-Géographie 2021 étudiant"
+        }
+      ],
+      "id": 1,
+      "title": "Histoire-Géographie 2021"
+    }
+  ]
+}
