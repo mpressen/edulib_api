@@ -1,7 +1,6 @@
 class License < ApplicationRecord
   belongs_to :student
   belongs_to :article
-  belongs_to :establishment
 
   enum status: {
     inactive: 0,
